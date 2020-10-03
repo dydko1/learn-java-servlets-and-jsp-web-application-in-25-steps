@@ -1,4 +1,4 @@
-package webapp;
+package webapp.com.dydko;
 
 public class UserValidationService {
 	public boolean validateUser(String user, String password) {

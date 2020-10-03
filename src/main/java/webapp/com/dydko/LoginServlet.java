@@ -1,4 +1,4 @@
-package webapp;
+package webapp.com.dydko;
 
 import java.io.IOException;
 import java.io.PrintWriter;
