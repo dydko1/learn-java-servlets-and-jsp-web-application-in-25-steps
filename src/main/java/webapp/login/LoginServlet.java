@@ -1,4 +1,4 @@
-package webapp;
+package webapp.login;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -36,7 +36,7 @@ import webapp.com.dydko.todo.TodoService;
 @WebServlet(urlPatterns = "/login.do")
 public class LoginServlet extends HttpServlet {
 
-	private UserValidationService userValidationService = new UserValidationService();
+	private LoginService userValidationService = new LoginService();
 	private TodoService todoService = new TodoService();
 
 	@Override
