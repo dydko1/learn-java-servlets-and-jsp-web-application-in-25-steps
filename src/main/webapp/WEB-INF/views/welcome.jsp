@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-Welcome ${name} and password is ${password}
+<p>Welcome ${name}</p>
+<p>Your todos are:</p>
+<p>${todos.toString()}</p>
 </body>
 </html>

@@ -10,7 +10,7 @@ public class TodoService {
 		todos.add(new Todo("Learn Web Application development"));
 		todos.add(new Todo("Learn Spring MVC"));
 		todos.add(new Todo("Learn Spring Rest Services"));
-		System.out.println("List inicjaliztion");
+		System.out.println("List initialization");
 	}
 	
 	public List<Todo> retrieveTodos(){

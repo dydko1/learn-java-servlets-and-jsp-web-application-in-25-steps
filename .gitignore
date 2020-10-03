@@ -1,2 +1,8 @@
-target/
-
+**target/*
+target/classes/webapp/LoginService.class
+target/classes/webapp/LoginServlet.class
+target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/welcome_jsp.class
+target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/welcome_jsp.java
+target

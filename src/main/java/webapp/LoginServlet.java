@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import sun.print.resources.serviceui;
+import webapp.todo.TodoService;
 
 /*
  * Browser sends Http Request to Web Server
@@ -36,6 +37,7 @@ import sun.print.resources.serviceui;
 public class LoginServlet extends HttpServlet {
 
 	private UserValidationService userValidationService = new UserValidationService();
+	private TodoService todoService = new TodoService();
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -49,14 +51,14 @@ public class LoginServlet extends HttpServlet {
 
 		String name = request.getParameter("name");
 		String password = request.getParameter("password");
-		
+
 		boolean isValidUser = userValidationService.validateUser(name, password);
-		
-		if(isValidUser) {
+
+		if (isValidUser) {
 			request.setAttribute("name", name);
+			request.setAttribute("todos", todoService.retrieveTodos());
 			request.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(request, response);
-		}
-		else {
+		} else {
 			request.setAttribute("errorMessage", "Invalid Credentials!!");
 			request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
 		}
