@@ -1,4 +1,4 @@
-package webapp.com.dydko;
+package webapp;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import sun.print.resources.serviceui;
-import webapp.todo.TodoService;
+import webapp.com.dydko.todo.TodoService;
 
 /*
  * Browser sends Http Request to Web Server

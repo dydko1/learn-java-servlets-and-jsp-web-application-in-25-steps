@@ -1,4 +1,4 @@
-package webapp.todo;
+package webapp.com.dydko.todo;
 
 public class Todo {
 	private String name;
