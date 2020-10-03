@@ -35,7 +35,7 @@ import sun.print.resources.serviceui;
 @WebServlet(urlPatterns = "/login.do")
 public class LoginServlet extends HttpServlet {
 
-	private LoginService service = new LoginService();
+	private UserValidationService userValidationService = new UserValidationService();
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -50,7 +50,7 @@ public class LoginServlet extends HttpServlet {
 		String name = request.getParameter("name");
 		String password = request.getParameter("password");
 		
-		boolean isValidUser = service.validateUser(name, password);
+		boolean isValidUser = userValidationService.validateUser(name, password);
 		
 		if(isValidUser) {
 			request.setAttribute("name", name);
