@@ -30,7 +30,7 @@ public class TodoServlet extends HttpServlet {
 		
 		String newTodo = request.getParameter("todo");
 		todoService.addTodo(new Todo(newTodo));
-		response.sendRedirect("/todo.do");		
+		response.sendRedirect("/todo.do");		a
 		// request.setAttribute("todos", todoService.retrieveTodos());
 		// request.getRequestDispatcher("/WEB-INF/views/todo.jsp").forward(request, response);
 	}
