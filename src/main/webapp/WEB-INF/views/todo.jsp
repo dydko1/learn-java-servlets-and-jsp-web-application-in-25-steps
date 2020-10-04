@@ -11,7 +11,7 @@
 	<p>Your todos are:</p>
 	<ol>
 		<c:forEach items="${todos}" var="todo">
-			<li>${todo.name}</li>
+			<li>${todo.name}&nbsp;</li>
 		</c:forEach>
 	</ol>
 	<p><font color="red">${errorMessage}</font></p>
