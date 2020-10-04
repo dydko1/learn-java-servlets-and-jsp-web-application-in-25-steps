@@ -5,6 +5,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<link href="webjars/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <title>Insert title here</title>
 </head>
 <body>
@@ -18,5 +19,7 @@
 	<form method="POST" action="/todo.do">
 		<input type="text" name="todo"/><input name="add" type="submit" />
 	</form>
+	<script src="webjars/jquery/3.5.1/jquery.min.js"></script>
+	<script src="webjars/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
